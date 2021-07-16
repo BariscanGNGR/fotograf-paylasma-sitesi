@@ -1,0 +1,7 @@
+<?php ob_start(); ?> 
+<?php 
+	session_start();
+	$_SESSION = array();
+	session_destroy();
+	header("Location:giris.php"); 
+?><?php ob_end_flush(); ?> 
